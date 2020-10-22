@@ -1,7 +1,7 @@
 ## Ecommerce
 Ecommerce web application using Angular | Node.js | Express.js | MongoDB (MEAN Stack)
 
-# Objective
+## Objective
 The goal is to build a Ecommerce web application where users can buy and sell products online.
 The project was developed as Full Stack Web app using technologies such as Angular | Node.js | Express.js | MongoDB (MEAN Stack)
 
@@ -35,3 +35,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 # How To Use 
+## Client Install
+cd client/Angularecommerce
+npm install
+ng serve -o
+## Server Install
+cd server
+npm install
+node server.js
