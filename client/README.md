@@ -36,10 +36,18 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # How To Use 
 ## Client Install
+
 cd client/Angularecommerce
+
 npm install
+
 ng serve -o
+
 ## Server Install
+
 cd server
+
 npm install
+
 node server.js
+
