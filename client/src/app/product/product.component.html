@@ -1,0 +1,50 @@
+<section id="product">
+    <div class="container-fluid p-5">
+      <app-message></app-message>
+      <div *ngIf="!product" class="m-auto">
+        <h1 class="text-center display-3 mt-5">
+          <i class="fa fa-spinner fa-spin"></i>
+        </h1>
+      </div>
+      <div *ngIf="product" >
+        <div class="row">
+          <div class="col-lg-4" >
+            <img src="http://localhost:9090/{{product.image}}" alt="productImage" class="image img-thumbnail">
+          </div>
+          <div class="col-lg-5">
+            <div class="row">
+              <div class="col-6">
+                <h4>{{ product.title }}</h4>
+                <p class="m-0">
+                </p>
+                <p class="m-0">
+                  <small class="text-muted">{{ product.category.name }}</small>
+                </p>
+              </div>
+            </div>
+            <hr>
+            <p class="lead">{{ product.description }}</p>
+          </div>
+          <div class="col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body">
+                <h5 class="card-title">Price: {{ product.price | currency:'INR' }}</h5>
+                <br>
+                <br>
+                <a class="btn btn-warning btn-block" (click)="addToCart()">Add to Cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          
+          <hr style="border: 2px solid black; ">
+          <div class="text-center">
+             <h4 >  To view cart item you have to login <a  routerLink="/login">click here</a> </h4>
+       </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  

@@ -1,0 +1,38 @@
+<section id="profile">
+  <div class="container ">
+    <h4 >My Profile</h4>
+    <hr>
+    <div *ngIf="!data.user" >
+    </div>
+    <div *ngIf="data.user" class="row ">
+      <div class="col-md-3">
+        <img [src]="data.user.picture" alt="userimage" class="thumbnail">
+      </div>
+      <div class="col-md-8 ">
+        <p id="name">{{ data.user.name }}</p>
+        <a routerLink="/profile/orders" class="btn btn-warning">My Orders</a>
+        <br>
+        <br>
+        <a routerLink="/profile/settings" class="btn btn-warning">Change Account Settings</a>
+        <br>
+        <br>
+        <a routerLink="/profile/address" class="btn btn-warning">Change Shipping Address</a>
+        <br>
+        <br>
+        <div *ngIf="data.user.isSeller">
+          <p class="lead">Seller Actions</p>
+          <hr>
+          <div class="row">
+            <div class="col-md-6">
+              <a routerLink="/profile/postproduct" style="font-size: 20px;" class="btn btn-outline-success btn-block">Post Product for Sale</a>
+            </div>
+            <div class="col-md-6">
+              <a routerLink="/profile/myproducts" style="font-size: 20px;"  class="btn btn-outline-info btn-block">My Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
