@@ -1,9 +1,21 @@
-## Ecommerce
+# DigiMall
 Ecommerce web application using Angular | Node.js | Express.js | MongoDB (MEAN Stack)
 
 ## Objective
 The goal is to build a Ecommerce web application where users can buy and sell products online.
-The project was developed as Full Stack Web app using technologies such as Angular | Node.js | Express.js | MongoDB (MEAN Stack)
+
+## Basic Features 
+
+* Login types : 1. User 2.Seller
+
+* Account registration
+
+* User can not add items to cart untill he login with proper id and password.
+
+* Seller can add products.
+
+* and many more.....
+
 
 # How To Install 
 ## Client Install
@@ -21,6 +33,10 @@ cd server
 npm install
 
 node server.js
+
+
+
+The project was developed as Full Stack Web app using technologies such as Angular | Node.js | Express.js | MongoDB (MEAN Stack)
 
 # Client
 
